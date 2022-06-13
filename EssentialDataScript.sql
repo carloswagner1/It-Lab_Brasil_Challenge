@@ -1,34 +1,34 @@
-/*inserts Planos de ServiÁos*/
+/*inserts Planos de Servi√ßos*/
 USE [Controle_Financeiro]
 GO
 
-INSERT INTO [dbo].[PlanoDeServicos] VALUES ('Pessoa FÌsica Free',0.00 , 0, 1,sysdatetime()
+INSERT INTO [dbo].[PlanoDeServicos] VALUES ('Pessoa F√≠sica Free',0.00 , 0, 1,sysdatetime()
 ,sysdatetime(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[PlanoDeServicos] VALUES ('Pessoa FÌsica Premium',29.90 , 30, 1,sysdatetime()
+INSERT INTO [dbo].[PlanoDeServicos] VALUES ('Pessoa F√≠sica Premium',29.90 , 30, 1,sysdatetime()
 ,sysdatetime(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[PlanoDeServicos] VALUES ('Pessoa JurÌdica Premium',99.90 , 30, 1,sysdatetime()
+INSERT INTO [dbo].[PlanoDeServicos] VALUES ('Pessoa Jur√≠dica Premium',99.90 , 30, 1,sysdatetime()
 ,sysdatetime(),'carloswagner','carloswagner')
 
-/*Tipos de LanÁamentos*/
+/*Tipos de Lan√ßamentos*/
 INSERT INTO [dbo].[TipoLancamentoConta] VALUES (1,'Receita',1,sysdatetime()
 ,sysdatetime(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[TipoLancamentoConta] VALUES (2,'Despesa',1,sysdatetime()
 ,sysdatetime(),'carloswagner','carloswagner')
 
-/*Categoria LanÁamentos*/
+/*Categoria Lan√ßamentos*/
 INSERT INTO [dbo].[CategoriaLancamento]VALUES (1,'Outros', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[CategoriaLancamento]VALUES (2,'PrÍmio', 1, sysdatetime(),
+INSERT INTO [dbo].[CategoriaLancamento]VALUES (2,'Pr√™mio', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[CategoriaLancamento]VALUES (3,'Presente', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[CategoriaLancamento]VALUES (4,'Sal·rio', 1, sysdatetime(),
+INSERT INTO [dbo].[CategoriaLancamento]VALUES (4,'Sal√°rio', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[CategoriaLancamento]VALUES (5,'Rendimentos', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[CategoriaLancamento]VALUES (6,'AlimentaÁ„o', 1, sysdatetime(),
+INSERT INTO [dbo].[CategoriaLancamento]VALUES (6,'Alimenta√ß√£o', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[CategoriaLancamento]VALUES (7,'EducaÁ„o', 1, sysdatetime(),
+INSERT INTO [dbo].[CategoriaLancamento]VALUES (7,'Educa√ß√£o', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[CategoriaLancamento]VALUES (8,'Lazer', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
@@ -38,13 +38,13 @@ INSERT INTO [dbo].[CategoriaLancamento]VALUES (10,'Pagamentos', 1, sysdatetime()
 sysdatetime(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[CategoriaLancamento]VALUES (11,'Roupas', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[CategoriaLancamento]VALUES (12,'Sa˙de', 1, sysdatetime(),
+INSERT INTO [dbo].[CategoriaLancamento]VALUES (12,'Sa√∫de', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[CategoriaLancamento]VALUES (13,'Transporte', 1, sysdatetime(),
 sysdatetime(),'carloswagner','carloswagner')
 
 
-/*AÁıes*/
+/*A√ß√µes*/
 INSERT INTO [dbo].[Acoes] VALUES(1,'Registar dados',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Acoes] VALUES(2,'Alterar dados',1, SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Acoes] VALUES(3,'Criar credencial',1, SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
@@ -53,24 +53,24 @@ INSERT INTO [dbo].[Acoes] VALUES(5,'Excluir credencial',1,SYSDATETIME(),SYSDATET
 INSERT INTO [dbo].[Acoes] VALUES(6,'Criar Conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Acoes] VALUES(7,'Alterar conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Acoes] VALUES(8,'Excluir Conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(9,'Criar cart„o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(10,'Alterar cart„o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(9,'Criar cart√£o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(10,'Alterar cart√£o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Acoes] VALUES(11,'Excuir cartao',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(12,'Incluir lanÁamento na conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(13,'Alterar lanÁamento na conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(14,'Excluir lanÁamento na conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(15,'Incluir lanÁamento no cart„o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(16,'Alterar lanÁamento no cart„o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(17,'Excluir lanÁamento no cart„o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(12,'Incluir lan√ßamento na conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(13,'Alterar lan√ßamento na conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(14,'Excluir lan√ßamento na conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(15,'Incluir lan√ßamento no cart√£o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(16,'Alterar lan√ßamento no cart√£o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(17,'Excluir lan√ßamento no cart√£o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Acoes] VALUES(18,'Visualizar dashboard',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(19,'Visualizar extrato lanÁamentos conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(20,'Visualizar extrato lanÁamentos cartao',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(21,'Visualizar relatÛrios de conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Acoes] VALUES(22,'Visualizar relatÛrios de cart„o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(19,'Visualizar extrato lan√ßamentos conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(20,'Visualizar extrato lan√ßamentos cartao',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(21,'Visualizar relat√≥rios de conta',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Acoes] VALUES(22,'Visualizar relat√≥rios de cart√£o',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 
 /*PerfilAcesso*/
 INSERT INTO [dbo].[PerfilAcesso] VALUES(1,'Administrador',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[PerfilAcesso] VALUES(2,'TÈcnico',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[PerfilAcesso] VALUES(2,'T√©cnico',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[PerfilAcesso] VALUES(3,'Editor',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[PerfilAcesso] VALUES(4,'ClienteEmpresa',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[PerfilAcesso] VALUES(5,'ClientePremium',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
@@ -175,15 +175,11 @@ INSERT INTO [dbo].[Perfis_Acoes] VALUES(5, 20,1,SYSDATETIME(),SYSDATETIME(),'car
 INSERT INTO [dbo].[Perfis_Acoes] VALUES(5, 21,1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Perfis_Acoes] VALUES(5, 22,1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 
-select * from Cliente;
 /*Cadastro do administrador*/
 INSERT INTO [dbo].[Cliente] VALUES('administrador','administrador@email.com',null,1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 INSERT INTO [dbo].[Credencial] VALUES('admin','admin',1, 1, SYSDATETIME(),SYSDATETIME(),'admin','admin')
 INSERT INTO [dbo].[Credenciais_Perfis] VALUES (1,1,'TI',1, SYSDATETIME(),SYSDATETIME(),'admin','admin')
 
-
-
-select * from PerfilAcesso;
 
 GO
 
