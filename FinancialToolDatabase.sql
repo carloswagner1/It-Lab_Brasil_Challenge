@@ -1,7 +1,7 @@
 USE CONTROLE_FINANCEIRO;
 
 CREATE TABLE PlanoDeServicos
-(PlanoId SMALLINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+(PlanoId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 NomePlano VARCHAR(30) NOT NULL,
 Valor DECIMAL(7,2) NOT NULL,
 Ativo BIT NOT NULL,
@@ -11,25 +11,25 @@ DataHoraAlteracao DATE NOT NULL,
 UsuarioInclusao VARCHAR(20) NOT NULL,
 UsuarioAlteracao VARCHAR(20) NOT NULL)
 
-CREATE TABLE Assinatura
-(AssinaturaId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-PlanoId SMALLINT NOT NULL,
-CONSTRAINT FK_AssinaturaPlano FOREIGN KEY (PlanoId)
-    REFERENCES PlanoDeServicos(PlanoId),
-DataVencimento DATE NOT NULL,
+CREATE TABLE Cliente 
+(ClienteId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+NomeCompleto VARCHAR(60) NOT NULL,
+Email VARCHAR(40) NOT NULL,
 Ativo BIT NOT NULL,
 DataHoraInclusao DATE NOT NULL,
 DataHoraAlteracao DATE NOT NULL,
 UsuarioInclusao VARCHAR(20) NOT NULL,
 UsuarioAlteracao VARCHAR(20) NOT NULL)
 
-CREATE TABLE Cliente 
-(ClienteId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-NomeCompleto VARCHAR(60) NOT NULL,
-Email VARCHAR(40) NOT NULL,
-AssinaturaId INT,
-CONSTRAINT FK_AssinaturaCliente FOREIGN KEY (AssinaturaId)
-    REFERENCES Assinatura(AssinaturaId),
+CREATE TABLE Assinatura
+(AssinaturaId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+PlanoId INT NOT NULL,
+CONSTRAINT FK_AssinaturaPlano FOREIGN KEY (PlanoId)
+    REFERENCES PlanoDeServicos(PlanoId),
+ClienteId INT NOT NULL,
+CONSTRAINT FK_AssinaturaCliente FOREIGN KEY (ClienteId)
+    REFERENCES Cliente(ClienteId),
+DataVencimento DATE NOT NULL,
 Ativo BIT NOT NULL,
 DataHoraInclusao DATE NOT NULL,
 DataHoraAlteracao DATE NOT NULL,
