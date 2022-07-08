@@ -1,4 +1,7 @@
 -- DropTable Script
+USE CONTROLE_FINANCEIRO;
+
+BEGIN TRANSACTION;
 
 DROP TABLE LancamentosCartao;
 DROP TABLE Cartao;
@@ -15,4 +18,4 @@ DROP TABLE PerfilAcesso;
 DROP TABLE Acoes;
 DROP TABLE PlanoDeServicos;
 
-
+COMMIT TRANSACTION;

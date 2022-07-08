@@ -1,302 +1,507 @@
-USE CONTROLE_FINANCEIRO
+USE ControleFinanceiro
 
 --INSERTS CLIENTE E CREDENCIAL
-INSERT INTO [dbo].[Cliente] VALUES('usuario2','usuario2@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario2','usuario2',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 
-INSERT INTO [dbo].[Cliente] VALUES('usuario3','usuario3@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario3','usuario3',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario4','usuario4@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario4','usuario4',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario5','usuario5@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario5','usuario5',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario6','usuario6@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario6','usuario6',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario7','usuario7@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario7','usuario7',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario8','usuario8@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario8','usuario8',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario9','usuario9@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario9','usuario9',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario10','usuario10@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario10','usuario10',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario11','usuario11@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario11','usuario11',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario12','usuario12@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario12','usuario12',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario13','usuario13@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario13','usuario13',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario14','usuario14@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario14','usuario14',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario15','usuario15@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario15','usuario15',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario16','usuario16@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario16','usuario16',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario17','usuario17@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario17','usuario17',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario18','usuario18@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario18','usuario18',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario19','usuario19@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario19','usuario19',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario20','usuario20@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario20','usuario20',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario21','usuario21@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario21','usuario21',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario22','usuario22@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario22','usuario22',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario23','usuario23@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario23','usuario23',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario24','usuario24@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario24','usuario24',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario25','usuario25@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario25','usuario25',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario26','usuario26@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario26','usuario26',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario27','usuario27@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario27','usuario27',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario28','usuario28@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario28','usuario28',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario29','usuario29@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario29','usuario295',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario30','usuario30@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario30','usuario30',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario31','usuario31@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario31','usuario31',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario32','usuario32@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario32','usuario32',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario33','usuario33@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario33','usuario33',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario34','usuario34@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario34','usuario34',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario35','usuario35@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario35','usuario35',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario36','usuario36@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario36','usuario36',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario37','usuario37@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario37','usuario37',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario38','usuario38@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario38','usuario38',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario39','usuario39@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario39','usuario39',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario40','usuario40@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario40','usuario40',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario41','usuario41@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario41','usuario41',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario42','usuario42@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario42','usuario42',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario43','usuario43@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario43','usuario43',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario44','usuario44@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario44','usuario44',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario45','usuario45@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario45','usuario45',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario46','usuario46@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario46','usuario46',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario47','usuario47@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario47','usuario47',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario48','usuario48@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario48','usuario48',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario49','usuario49@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario49','usuario49',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario50','usuario50@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario50','usuario50',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario51','usuario51@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario51','usuario51',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario52','usuario52@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario52','usuario52',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario53','usuario53@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario53','usuario53',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario54','usuario54@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario54','usuario54',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario55','usuario55@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario55','usuario55',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario56','usuario56@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario56','usuario56',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario57','usuario57@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario57','usuario57',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario58','usuario58@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario58','usuario58',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario59','usuario59@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario59','usuario59',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario60','usuario60@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario60','usuario60',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario61','usuario61@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario61','usuario61',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario62','usuario62@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario62','usuario62',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario63','usuario63@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario63','usuario63',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario64','usuario64@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario64','usuario64',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario65','usuario65@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario65','usuario65',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario66','usuario66@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario66','usuario66',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario67','usuario67@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario67','usuario67',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario68','usuario68@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario68','usuario68',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario69','usuario69@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario69','usuario69',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario70','usuario70@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario70','usuario70',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario71','usuario71@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario71','usuario71',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario72','usuario72@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario72','usuario72',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario73','usuario73@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario73','usuario73',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario74','usuario74@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario74','usuario74',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario75','usuario75@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario75','usuario75',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario76','usuario76@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario76','usuario76',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario77','usuario77@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario77','usuario77',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario78','usuario78@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario78','usuario78',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario79','usuario79@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario79','usuario79',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario80','usuario80@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario80','usuario80',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario81','usuario81@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario81','usuario81',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario82','usuario82@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario82','usuario82',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario83','usuario83@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario83','usuario83',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario84','usuario84@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario84','usuario84',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario85','usuario85@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario85','usuario85',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario86','usuario86@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario86','usuario86',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario87','usuario87@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario87','usuario87',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario88','usuario88@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario88','usuario88',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario89','usuario89@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario89','usuario89',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario90','usuario90@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario90','usuario90',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario91','usuario91@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario91','usuario91',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario92','usuario92@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario92','usuario92',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario93','usuario93@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario93','usuario93',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario94','usuario94@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario94','usuario94',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario95','usuario95@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario95','usuario95',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario96','usuario96@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario96','usuario96',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario97','usuario97@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario97','usuario97',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario98','usuario98@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario98','usuario98',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario99','usuario99@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario99','usuario99',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-
-INSERT INTO [dbo].[Cliente] VALUES('usuario100','usuario100@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
-INSERT INTO [dbo].[Credencial] VALUES('usuario100','usuario100',Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Cecília da Costa','ceciliacosta@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('ceciliacosta' ,'6qR2AOykZM' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Francisco da Rosa','chicorosa@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('chicorosa' ,'DWNwRhiHq0' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Catarina Rodrigues','catarinarodrigues@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('catarinarodrigues' ,'YtUUF9sh2S' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Enzo Gabriel Nunes','enzonunes@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('enzonunes' ,'IzAbqBqflF' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Maria Cecília Cardoso','mahcardoso@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('mahcardoso' ,'rob6bte91K' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Alexandre Farias','alexfarias@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('alexfarias' ,'0P4KkAKTiD' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Esther Alves','estheralves@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('estheralves' ,'nq2nIjozEP' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Catarina Silveira','catarinasilveira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('catarinasilveira' ,'5x5WsWGMW7' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Davi Lucca da Costa','davicosta@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('davicosta' ,'YLNSXzShI1' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Pietro Ribeiro','pietroribeiro@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('pietroribeiro' ,'lwidZqCEgH' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Enzo Gabriel Fogaça','enzofogaça@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('enzofogaça' ,'Uc4Pznl517' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Marina Porto','marinaporto@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('marinaporto' ,'3OJGig51ED' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Letícia Freitas','leiticiafreitas@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('leiticiafreitas' ,'rp0QJP8MTf' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Lavínia da Costa','laviniacosta@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('laviniacosta' ,'Uo7O5w3gqu' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Paulo Viana','pauloviana@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('pauloviana' ,'ekAoqiLlaP' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('João Lucas Dias','joaodias@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('joaodias' ,'pI6gZGwXSF' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Julia Dias','juliadias@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('juliadias' ,'2nuz3plxMR' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Luiz Felipe da Rocha','luizrocha@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('luizrocha' ,'hr3iWjGhLg' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Theo Duarte','theoduarte@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('theoduarte' ,'y2ouYE1JbK' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Vitor Gabriel Pinto','vitorgabriel@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('vitorgabriel' ,'PTzBIsrtf4' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Benjamin Fogaça','benjaminfogaca@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('benjaminfogaca' ,'CDm5m8fsgq' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Lavínia Cunha','laviniacunha@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('laviniacunha' ,'PTj5F796Gb' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Renan Carvalho','renancarvalho@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('renancarvalho' ,'HXu6Y4oFoK' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Noah Silveira','noahsilveira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('noahsilveira' ,'ArOmn1lIkI' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Anthony Araújo','anthonyaraujo@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('anthonyaraujo' ,'01dZxiWwed' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Ana Lívia Campos','analiviacampos@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('analiviacampos' ,'Nl18iO3MUh' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Leonardo Barros','leonardobarros@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('leonardobarros' ,'YWOn92fkBF' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Luiz Henrique Correia','luizcorrea@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('luizcorrea' ,'s17MPtumgO' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Davi Lucca da Cunha','davilucca@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('davilucca' ,'Gt18sZNlmi' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Vinicius Porto','viniporto@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('viniporto' ,'JB5Yo4QKeR' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Davi Luiz Lima','davilima@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('davilima' ,'PNINaZ7LCd' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Stephany das Neves','stehneves@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('stehneves' ,'aJNRH6rUiU' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Alana Cunha','alanacunha@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('alanacunha' ,'4sWzGBsYLN' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Ana Lívia Azevedo','analiviaazevedo@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('analiviaazevedo' ,'pcczp2OnEQ' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Emanuelly Teixeira','manuteixeira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('manuteixeira' ,'GeaUxiRf31' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Isabella Castro','isabellacastro@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('isabellacastro' ,'0xjMlqOUEa' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Fernando Rocha','fernandorocha@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('fernandorocha' ,'iu3Ajj3yM7' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Maria Eduarda Costa','maducosta@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('maducosta' ,'FTcgpPE7u8' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Laura Dias','lauradias@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('lauradias' ,'ykwXxYEBsI' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Marcelo Campos','marcelocampos@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('marcelocampos' ,'cR4WRd6KRI' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Ana Sophia Moura','anasofhiamoura@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('anasofhiamoura' ,'IYdk4I09Gl' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Luiza Costa','luizacosta@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('luizacosta' ,'84LtR9HXA1' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Pedro Fernandes','pedrofernandes@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('pedrofernandes' ,'fdIazb3umL' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Laura Souza','laurasouza@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('laurasouza' ,'4ukYWehMen' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Thomas Monteiro','thomasmonteiro@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('thomasmonteiro' ,'yci9M19UN9' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Maria Vitória Costela','vihcostela@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('vihcostela' ,'LtdUJSwDEY' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Alana Almeida','alanaalmeida@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('alanaalmeida' ,'P9J0XfU5sz' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Laura Nascimento','lauranascimento@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('lauranascimento' ,'jgRIgf9f0N' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Arthur Vieira','arthurvieira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('arthurvieira' ,'fC89XIRJMW' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Ana Teixeira','anateixeira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('anateixeira' ,'hcWrSsNno6' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Kamilly Gomes','kamullygomes@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('kamullygomes' ,'dNduW9PWfG' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Anthony Farias','anthonyFarias@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('anthonyFarias' ,'kBIjAgrSp4' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Luiz Henrique Caldeira','luizcaldeira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('luizcaldeira' ,'pNXB5puISZ' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Ana Laura da Costa','analauracosta@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('analauracosta' ,'Ewnhh9hyWD' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('André Pinto','andrepinto@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('andrepinto' ,'47EDgEjNXO' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Letícia das Neves','leticianeves@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('leticianeves' ,'IDcfEYKzge' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Isabelly Carvalho','isabellycarvalho@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('isabellycarvalho' ,'OlQ2Jz2qmN' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('João Pedro Alves','joaopedroalves@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('joaopedroalves' ,'thLykr3K6Q' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Cauê Pinto','cauepinto@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('cauepinto' ,'ZET2kYPwNx' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Eloah Castro','eloahcastro@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('eloahcastro' ,'PcYhThWLO9' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Alice Souza','alicesouza@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('alicesouza' ,'a8hlxHTqSP' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Vicente Mendes','vicentemendes@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('vicentemendes' ,'7rURk5q1q4' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Laura Jesus','laurajesus@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('laurajesus' ,'n7WCfqj12y' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Davi Lucas Vieira','davilucas@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('davilucas' ,'1SxY5jgOQz' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Letícia Pires','leticiapires@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('leticiapires' ,'eNhzfHuL8b' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Laís Martins','laismartins@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('laismartins' ,'GmZco4IOwB' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Locar Auto Locações de Automóveis ME','locarauto@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('locarauto' ,'DmT0AOageq' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Comidinhas Restaurante Ltda','comidinhas@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('comidinhas' ,'U852ybAin9' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('To Indo Mundanças Ltda','toindomudancas@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('toindomudancas' ,'AtlaLQTUfF' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Comunica Telecom ME','comunica@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('comunica' ,'Wjrqas61Oa' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Festinha Buffet Ltda','festinha@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('festinha' ,'ikZddN5dxi' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Chapadão Adega ME','chapadao@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('chapadao' ,'dyRFNeWhz2' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Rapidinho Entregas Expressas Ltda','rapidinhoentregas@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('rapidinhoentregas' ,'nLcW32E0sS' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Green Alimentos Ltda','greenalimentos@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('greenalimentos' ,'QQ3quW4p0q' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Litros Comercio de Bebidas ME','litros@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('litros' ,'NSegZsAwPz' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Thomas Porto Eletrônica ME ','thomasportoeletronica@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('thomasportoeletronica' ,'n4BGP48Tur' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Agatha Marcenaria ME','agathamarcenaria@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('agathamarcenaria' ,'nB9hrt3lat' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Sport Academia Ltda','sportsacademia@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('sportsacademia' ,'SoDyKcgKNx' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Lorenzo Pizzaria ME','lorenzopizzaria@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('lorenzopizzaria' ,'92qB8767Qq' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Eduarda Vieira Joalheria Ltda','dudajoalheria@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('dudajoalheria' ,'o5rocaYWBz' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Alana Almeida Advocacia ME','alanaalmeidaadvocacia@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('alanaalmeidaadvocacia' ,'FUdJJnmqy0' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Click  Filmagens Ltda','clickfilmagens@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('clickfilmagens' ,'dysKzrIwpZ' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Cards Gráfica ME','cardsgrafica@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('cardsgrafica' ,'cUUK9xkXIm' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Destaque  Publicidade e Propaganda Ltda','destaquepublicidade@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('destaquepublicidade' ,'LO8pYHSAyG' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Padoca Padaria ME','padoca@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('padoca' ,'1R4kdtSlf8' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Cash Financeira ME','cashfinanceira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('cashfinanceira' ,'B8SWJRItpR' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Maderia Marcenaria Ltda','madeiramarcenaria@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('madeiramarcenaria' ,'X2gUh5d05Q' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Gulosão Doces & Salgados ME','gulosao@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('gulosao' ,'7xj2XClpnH' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Remove Entulhos Ltda','removeentulhos@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('removeentulhos' ,'noG7BPOJA4' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Continhas Contabilidade ME','continhas@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('continhas' ,'cXw8sS3LJz' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Vrumm Transportes ME','vrumm@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('vrumm' ,'dGlC89Ekos' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Cheirosinho Limpeza Ltda','cheirosinho@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('cheirosinho' ,'sSYzPZFfjF' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Good Look Fotografias ME','goodlook@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('goodlook' ,'ZBdLALf4Yo' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Forte Construções ME','forteconstrucoes@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('forteconstrucoes' ,'s1wU4tT8T9' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Roupas Limpas Lavanderia ME','roupaslimpas@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('roupaslimpas' ,'rCSG2jf7EF' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Bar Bebedeira ME','barbebedeira@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('barbebedeira' ,'DeHgqHsLBH' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Suits Assessoria Jurídica Ltda','suitsassessoria@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('suitsassessoria' ,'1u8mF2Wa1q' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('XingLing Produtos Importados Ltda','xingling@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('xingling' ,'ZjtsplRLjX' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Chewie PetShop ','chewiepetshop@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('chewiepetshop' ,'Qm1YJhg2ti' ,Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+
+INSERT INTO [dbo].[Cliente] ([NomeCompleto] ,[Email] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao]) VALUES
+			('Millenium Transportes S.A','millenium@email.com',1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
+INSERT INTO [dbo].[Credencial] ([NomeUsuario] ,[Senha] ,[ClienteId] ,[Ativo] ,[DataHoraInclusao] ,[DataHoraAlteracao] ,[UsuarioInclusao] ,[UsuarioAlteracao])  VALUES
+			('millenium' ,'AkT8Ma1j0s', Scope_identity(),1,SYSDATETIME(),SYSDATETIME(),'carloswagner','carloswagner')
 
 
 --inserts ASSINATURA
