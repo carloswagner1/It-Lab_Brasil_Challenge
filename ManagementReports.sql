@@ -34,17 +34,18 @@ NOT IN
 	WHERE [dbo].[Assinatura].PlanoId = 2 AND [dbo].[Assinatura].Ativo = 1)
 GO
 
---SELECIONAR NOME E EMAIL DOS CLINTES QUE AS ASSINATURAS QUE VENCEM NOS PRÓXIMOS 30 DIAS
+
+--SELECIONAR NOME E EMAIL DOS CLIENTES QUE AS ASSINATURAS QUE VENCEM NOS PRÓXIMOS 30 DIAS
 CREATE OR ALTER  VIEW [dbo].[SubscriptionsExpiring30Days] AS
-SELECT [dbo].[Cliente].NomeCompleto, [dbo].[Cliente].Email  
+SELECT [dbo].[Cliente].NomeCompleto, [dbo].[Cliente].Email, [dbo].[Assinatura].DataVencimento  
 FROM [dbo].[Cliente] LEFT JOIN [dbo].[Assinatura] ON [dbo].[Cliente].ClienteId = [dbo].[Assinatura].ClienteId
 	WHERE [dbo].[Assinatura].datavencimento BETWEEN GETDATE() AND DATEADD(Day,+30,GETDATE()) 
 	AND [dbo].[Assinatura].PlanoId = 2 OR [dbo].[Assinatura].PlanoId = 3
-	AND [dbo].[Assinatura].Ativo = 1
+	AND [dbo].[Assinatura].Ativo = 1	
 GO
 
 -- CONTABILIZAR A QUANTIDADE DE PLANOS ATIVOS PASSANDO O NOME DO PLANO COMO VARIÁVEL
-CREATE OR ALTER PROCEDURE ActiveCustomersPerPlan @PLANO NVARCHAR(100) 
+CREATE OR ALTER PROCEDURE ActiveCustomersPerPlan @PLANO NVARCHAR(30) 
 AS
 SELECT COUNT(*) AS 'TOTAL DE PLANOS ATIVOS'FROM [dbo].[Assinatura] 
 INNER JOIN [dbo].[PlanoDeServicos]  ON [dbo].[Assinatura].PlanoId = [dbo].[PlanoDeServicos].PlanoId
@@ -52,10 +53,10 @@ WHERE
 UPPER([dbo].[PlanoDeServicos].[NomePlano]) = UPPER(@PLANO) AND [dbo].[Assinatura].ativo = 1
 GO
 
+
 -- DEMONSTRAR TOTAIS DE PLANOS ATIVOS E QUANTIDADE DE CADA PLANO EM UMA TABELA
 CREATE OR ALTER PROCEDURE ActiveCustomersTable @Ativo BIT 
 AS
-
 DECLARE @PessoaFisicaPremium INT
 DECLARE @PessoaFisicaFree INT
 DECLARE @PessoaJuridicaPremium INT
