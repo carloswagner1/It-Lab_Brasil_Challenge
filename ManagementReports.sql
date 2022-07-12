@@ -10,6 +10,7 @@ INTERSECT (SELECT [dbo].[Cliente].ClienteId, [dbo].[Cliente].NomeCompleto, [dbo]
 	WHERE [dbo].[Assinatura].PlanoId = 2)
 GO
 
+SELECT * FROM [dbo].[FreeToPremium]
 
 -- SELECIONAR ID, NOME E EMAIL DOS CLIENTES PREMIUM QUE RENOVARAM A ASSINATURA ATÉ A DATA DE HOJE E ESTÃO ATIVOS
 CREATE OR ALTER VIEW [dbo].[RenewedPremiumCustomers] AS
@@ -22,6 +23,7 @@ INTERSECT
 	WHERE [dbo].[Assinatura].PlanoId = 2 AND [dbo].[Assinatura].Ativo = 1)
 GO
 
+SELECT * FROM [dbo].[RenewedPremiumCustomers]
 
 -- SELECIONAR ID, NOME E EMAIL DOS CLIENTES PREMIUM QUE NÃO RENOVARAM A ASSINATURA ATÉ A DATA DE HOJE E ESTÃO ATIVOS
 CREATE OR ALTER  VIEW [dbo].[NonRenewedPremiumCustomers] AS
@@ -34,6 +36,7 @@ NOT IN
 	WHERE [dbo].[Assinatura].PlanoId = 2 AND [dbo].[Assinatura].Ativo = 1)
 GO
 
+SELECT * FROM [dbo].[NonRenewedPremiumCustomers]
 
 --SELECIONAR NOME E EMAIL DOS CLIENTES QUE AS ASSINATURAS QUE VENCEM NOS PRÓXIMOS 30 DIAS
 CREATE OR ALTER  VIEW [dbo].[SubscriptionsExpiring30Days] AS
@@ -44,6 +47,8 @@ FROM [dbo].[Cliente] LEFT JOIN [dbo].[Assinatura] ON [dbo].[Cliente].ClienteId =
 	AND [dbo].[Assinatura].Ativo = 1	
 GO
 
+SELECT * FROM [dbo].[SubscriptionsExpiring30Days]
+
 -- CONTABILIZAR A QUANTIDADE DE PLANOS ATIVOS PASSANDO O NOME DO PLANO COMO VARIÁVEL
 CREATE OR ALTER PROCEDURE ActiveCustomersPerPlan @PLANO NVARCHAR(30) 
 AS
@@ -52,6 +57,8 @@ INNER JOIN [dbo].[PlanoDeServicos]  ON [dbo].[Assinatura].PlanoId = [dbo].[Plano
 WHERE
 UPPER([dbo].[PlanoDeServicos].[NomePlano]) = UPPER(@PLANO) AND [dbo].[Assinatura].ativo = 1
 GO
+
+EXEC ActiveCustomersPerPlan @PLANO = 'Pessoa Física Premium'
 
 
 -- DEMONSTRAR TOTAIS DE PLANOS ATIVOS E QUANTIDADE DE CADA PLANO EM UMA TABELA
@@ -78,5 +85,46 @@ SELECT @Total AS "Total de planos",
 	   @PessoaFisicaPremium AS "Qtd pessoas fisicas premium", 
        @PessoaJuridicaPremium AS "Qtd pessoa juridic premium"
 GO
+
+EXEC ActiveCustomersTable @Ative = 1
+
+-- FATURAMENTO DO PERÍODO
+CREATE OR ALTER PROCEDURE FaturamentoPeriodo @DATAINICIAL DATE, @DATAFINAL DATE
+AS
+
+	DECLARE @PessoaFisicaPremium INT	
+	DECLARE @PessoaJuridicaPremium INT
+	DECLARE @TotalPessoaFisicaPremium FLOAT
+	DECLARE @TotalPessoaJuridicaPremium FLOAT
+	DECLARE @ValorPlanoPF FLOAT
+	DECLARE @ValorPlanoPJ FLOAT
+	DECLARE @FaturamentoTotal FLOAT
+
+	SELECT @PessoaFisicaPremium = COUNT(*) FROM [dbo].[Assinatura]
+	WHERE [dbo].[Assinatura].PlanoId = 2  AND DataHoraInclusao BETWEEN @DATAINICIAL AND @DATAFINAL;
+
+	SELECT @PessoaJuridicaPremium = COUNT(*) FROM [dbo].[Assinatura]
+	WHERE [dbo].[Assinatura].PlanoId = 3  AND DataHoraInclusao BETWEEN @DATAINICIAL AND @DATAFINAL;
+
+	SELECT @ValorPlanoPF = [dbo].[PlanoDeServicos].Valor FROM [dbo].[PlanoDeServicos]
+	WHERE [dbo].[PlanoDeServicos].PlanoId = 2; 
+
+	SELECT @ValorPlanoPJ = [dbo].[PlanoDeServicos].Valor FROM [dbo].[PlanoDeServicos]
+	WHERE [dbo].[PlanoDeServicos].PlanoId = 3; 
+
+	SET @TotalPessoaFisicaPremium = @PessoaFisicaPremium * @ValorPlanoPF;
+	SET @TotalPessoaJuridicaPremium = @PessoaJuridicaPremium * @ValorPlanoPJ;
+
+	SET @FaturamentoTotal =  @TotalPessoaFisicaPremium + @TotalPessoaJuridicaPremium;
+
+	
+SELECT @FaturamentoTotal AS "Faturamento Total do Período", 
+	   @TotalPessoaFisicaPremium AS "Valor Total de Pessoa Física Premium",  
+   	   @TotalPessoaJuridicaPremium AS "Valor Total de Pessoa Jurídica Premium"
+GO
+
+
+EXEC FaturamentoPeriodo @DATAINICIAL = '2022-06-01', @DATAFINAL = '2022-06-30'
+
 
 
