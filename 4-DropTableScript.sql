@@ -1,5 +1,5 @@
 -- DropTable Script
-USE CONTROLE_FINANCEIRO;
+USE ControleFinanceiro;
 
 BEGIN TRANSACTION;
 

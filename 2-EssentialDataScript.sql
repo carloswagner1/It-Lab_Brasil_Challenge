@@ -1,5 +1,5 @@
 
-USE ControleFinanceiro2
+USE ControleFinanceiro
 
 BEGIN TRANSACTION;
 
@@ -20,9 +20,10 @@ INSERT INTO [dbo].[PlanoDeServicos]
 			('Pessoa Física Premium',29.90 , 1, 30,sysdatetime(),sysdatetime(),'carloswagner','carloswagner'),
 			('Pessoa Jurídica Premium',99.90 , 1, 30,sysdatetime(),sysdatetime(),'carloswagner','carloswagner')
 
+GO
 
 --inserts Tipos de Lançamentos
-GO
+
 
 INSERT INTO [dbo].[TipoLancamentoConta]
            ([TipoLancamentoId]
