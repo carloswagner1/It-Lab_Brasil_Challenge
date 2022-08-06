@@ -7,8 +7,8 @@ SELECT
     [dbo].[Cliente].NomeCompleto,
     [dbo].[Cliente].Email
 FROM
-    [dbo].[Assinatura]
-    LEFT JOIN [dbo].[Cliente] ON [dbo].[Assinatura].ClienteId = [dbo].[Cliente].ClienteId
+	[dbo].[Cliente]
+    LEFT JOIN [dbo].[Assinatura] ON [dbo].[Cliente].ClienteId = [dbo].[Assinatura].ClienteId
 WHERE
     [dbo].[Assinatura].DataHoraInclusao < GETDATE()
     AND [dbo].[Assinatura].PlanoId = 1
@@ -253,3 +253,35 @@ WHERE
 GO
 
 EXEC ActiveCustomersPerPlan @PLANO = 'Pessoa Física Premium'
+
+
+--- Usando ROLLUP
+
+SELECT
+    [dbo].[Cliente].NomeCompleto,
+    [dbo].[Cliente].Email,
+	[dbo].[PlanoDeServicos].NomePlano,
+    [dbo].[Assinatura].DataVencimento
+
+FROM
+    [dbo].[Cliente]
+    LEFT JOIN [dbo].[Assinatura] ON [dbo].[Cliente].ClienteId = [dbo].[Assinatura].ClienteId
+	LEFT JOIN [dbo].[PlanoDeServicos] ON [dbo].[Assinatura].PlanoId = [dbo].[PlanoDeServicos].PlanoId
+WHERE [dbo].[Assinatura].Ativo = 1
+GROUP BY
+	ROLLUP([dbo].[Assinatura].DataVencimento, [dbo].[PlanoDeServicos].NomePlano,[dbo].[Cliente].NomeCompleto,[dbo].[Cliente].Email);
+
+
+--ROLLUP
+
+SELECT 
+	ISNULL([dbo].[PlanoDeServicos].NomePlano, 'Resultados')  AS None_do_Plano,
+	COUNT (*) AS Qtde_Assinaturas,
+	SUM([dbo].[PlanoDeServicos].[Valor]) AS Valor_Total
+FROM [dbo].[Assinatura]
+	LEFT JOIN [dbo].[PlanoDeServicos] ON [dbo].[Assinatura].PlanoId = [dbo].[PlanoDeServicos].PlanoId 
+GROUP BY
+	ROLLUP([dbo].[PlanoDeServicos].NomePlano)
+
+
+
